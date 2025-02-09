@@ -1973,28 +1973,28 @@ textarea.form-input::-webkit-resizer { display: none; }
 #member-age,
 #member-traits,
 #member-role {
-    display: inline-block; /* Hiển thị như một tag */
-    background: linear-gradient(135deg, #252525, #1a1a1a); /* Hiệu ứng gradient nhẹ */
-    color: #ffffff; /* Chữ trắng */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Viền nhẹ */
-    border-radius: 18px; /* Bo tròn mềm mại */
-    padding: 6px 14px; /* Khoảng cách bên trong */
-    font-size: 14px; /* Kích thước chữ nhỏ */
-    font-weight: 600; /* Chữ đậm hơn một chút */
-    text-align: center; /* Căn giữa nội dung */
-    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.1); /* Đổ bóng nhẹ */
-    margin: 8px 5px; /* Khoảng cách giữa các phần tử */
-    transition: all 0.3s ease-in-out; /* Hiệu ứng mượt mà */
+    display: inline-block !important; /* Hiển thị như một tag */
+    background: linear-gradient(135deg, #252525, #1a1a1a) !important; /* Hiệu ứng gradient nhẹ */
+    color: #ffffff !important; /* Chữ trắng */
+    border: 1px solid rgba(255, 255, 255, 0.3) !important; /* Viền nhẹ */
+    border-radius: 18px !important; /* Bo tròn mềm mại */
+    padding: 6px 14px !important; /* Khoảng cách bên trong */
+    font-size: 14px !important; /* Kích thước chữ nhỏ */
+    font-weight: 600 !important; /* Chữ đậm hơn một chút */
+    text-align: center !important; /* Căn giữa nội dung */
+    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.1) !important; /* Đổ bóng nhẹ */
+    margin: 8px 5px !important; /* Khoảng cách giữa các phần tử */
+    transition: all 0.3s ease-in-out !important; /* Hiệu ứng mượt mà */
 }
 
 /* Hiệu ứng khi hover vào */
 #member-age:hover,
 #member-traits:hover,
 #member-role:hover {
-    background: linear-gradient(135deg, #3a3a3a, #222222); /* Tăng độ sáng khi hover */
-    border-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 5px 12px rgba(255, 255, 255, 0.2);
-    transform: scale(1.07); /* Tăng nhẹ kích thước */
+    background: linear-gradient(135deg, #3a3a3a, #222222) !important; /* Tăng độ sáng khi hover */
+    border-color: rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 5px 12px rgba(255, 255, 255, 0.2) !important;
+    transform: scale(1.07) !important; /* Tăng nhẹ kích thước */
 }
 
 /* View Details Button */
@@ -2123,16 +2123,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 .nickname {
-  font-size: 12px;
-  color: #cccccc; /* Màu chữ nhẹ hơn */
-  background: #2a2a2a; /* Nền tối nhẹ hơn */
-  display: inline-block;
-  padding: 4px 10px;
-  border-radius: 6px;
+  font-size: 12px !important;
+  color: #cccccc !important; /* Màu chữ nhẹ hơn */
+  background: #2a2a2a !important; /* Nền tối nhẹ hơn */
+  display: inline-block !important;
+  padding: 4px 10px !important;
+  border-radius: 6px !important;
   margin-top: 3px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  font-weight: bold !important; 
 }
 
 .member-details {
@@ -2155,16 +2155,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 /* Hiệu ứng phát sáng lấp lánh cho tên */
 .name {
-  font-size: 16px; /* Nhỏ nhắn hơn */
-  font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #3fbddd, #579cf1, #004182); /* Gradient màu tím xanh */
+  font-size: 16px !important; /* Nhỏ nhắn hơn */
+  font-weight: bold !important;
+  padding: 6px 12px !important;
+  border-radius: 8px !important;
+  background: linear-gradient(135deg, #3fbddd, #579cf1, #004182) !important; /* Gradient màu tím xanh */
   color: #ffffff;
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
-  box-shadow: 0 0 12px rgba(71, 227, 154, 0.6);
-  display: inline-block;
-  animation: glow 1.5s infinite alternate;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7) !important;
+  box-shadow: 0 0 12px rgba(71, 227, 154, 0.6) !important;
+  display: inline-block !important;
+  animation: glow 1.5s infinite alternate !important;
 }
 
 @keyframes glow {
