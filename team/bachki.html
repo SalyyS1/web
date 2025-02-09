@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/bach.png" alt="Lương Hoàng Bách" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Lương Hoàng Bách">Lương Hoàng Bách</h1>
+
+          <p id="member-role" class="role-box">Web Designer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:luonghoangbach@gmail.com" class="contact-link">luonghoangbach@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+84967546321" class="contact-link">+84 967546321</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Ngày Sinh</p>
+
+              <time datetime="01-05-2007">10-03-2007</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Địa Chỉ</p>
+
+              <address>Đà Lạt, Lâm Đồng</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://web.facebook.com/" target="_blank" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <button class="navbar-link active" data-nav-link="about">Thông Tin</button>
+            </li>
+            <li class="navbar-item">
+                <button class="navbar-link" data-nav-link="contact">Liên Hệ</button>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Thông tin về tôi</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Tôi là một người mang quốc tịch Việt Nam, sinh ra và lớn lên tại Lâm Đồng và hiện đang theo học tại trường Trung Học Phổ Thông Chuyên Thăng Long - Đà Lạt.
+          </p>
+
+          <p>
+            Tôi là một học sinh lớp 12 chuyên Toán, luôn say mê với những con số, công thức và bài toán thách thức. Toán học đối với tôi không chỉ là một môn học mà còn là một cách để khám phá quy luật của thế giới, rèn luyện tư duy logic và khả năng giải quyết vấn đề. Mỗi bài toán khó là một thử thách thú vị, và tôi luôn cảm thấy hứng thú khi tìm ra lời giải.
+          </p>
+
+          <p>
+            Ngoài ra, tôi còn thích khám phá mối liên hệ giữa toán học và các lĩnh vực khác như vật lý, tin học và trí tuệ nhân tạo. Chính nhờ niềm đam mê này mà tôi không ngừng tìm kiếm, học hỏi và ứng dụng toán học vào cuộc sống cũng như các dự án nghiên cứu nhỏ của mình.
+          </p>
+        </section>
+
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Công việc tôi đang làm</h3>
+
+          <ul class="service-list">
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="../assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Gia Sư Toán</h4>
+
+                <p class="service-item-text">
+                  Mình có đam mê mãnh liệt với môn Toán vì vậy mình chọn việc dạy toán để nâng cao kiến thức và kiếm thêm thu nhập !
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="../assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Nhiếp Ảnh</h4>
+
+                <p class="service-item-text">
+                  Mình là một người mê chụp ảnh, vì vậy mình có rất nhiều những bức ảnh đẹp trong máy.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Những người bạn</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="../assets/images/nhan.png" alt="Trần Đức Nhân" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Trần Đức Nhân</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Nhân là người bạn đầu tiên của mình tại môi trường cấp 3. Chúng mình đã gắn bó với nhau suốt 3 năm. Vì vậy đối với minh Nhân là một người bạn vô cùng quan trọng.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="../assets/images/thang.png" alt="Lê Quốc Thắng" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Lê Quốc Thắng</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Như Nhân, Thắng cũng là một trong hai người bạn đầu tiên của mình tại cấp 3. Thắng luôn là người giúp đỡ mình trong mọi việc. Cậu ấy là một người hiền lành và vô cùng tốt bụng.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="../assets/images/Nhân.png" alt="Trần Đức Nhân" width="80" data-modal-img>
+              </figure>
+
+              <img src="../assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Trần Đức Nhân</h4>
+
+              <time datetime="2021-06-14">27 September - 25 December, 2007</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+            <h3 class="h3 clients-title">Ngôn Ngữ Lập Trình Yêu Thích</h3>
+
+            <ul class="clients-list has-scrollbar">
+
+              <li class="clients-item">
+                <a href="https://en.wikipedia.org/wiki/Microsoft_Azure_SQL_Database" target="_blank">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="Azure SQL Database" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+                </a>
+              </li>
+
+            </ul>
+          </section>
+
+
+        </section>
+
+      </article>
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact" style="display: none;">
+
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <script>
+    "use strict";
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      /** 🔹 Sidebar Toggle **/
+      const sidebar = document.querySelector("[data-sidebar]");
+      const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+
+      sidebarBtn.addEventListener("click", function () {
+        sidebar.classList.toggle("active");
+      });
+
+      /** 🔹 Testimonials Modal **/
+      const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
+      const modalContainer = document.querySelector("[data-modal-container]");
+      const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
+      const overlay = document.querySelector("[data-overlay]");
+
+      const modalImg = document.querySelector("[data-modal-img]");
+      const modalTitle = document.querySelector("[data-modal-title]");
+      const modalText = document.querySelector("[data-modal-text]");
+
+      function testimonialsModalFunc() {
+        modalContainer.classList.toggle("active");
+        overlay.classList.toggle("active");
+      }
+
+      testimonialsItem.forEach(item => {
+        item.addEventListener("click", function () {
+          modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
+          modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+          modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+          modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+          testimonialsModalFunc();
+        });
+      });
+
+      modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+      overlay.addEventListener("click", testimonialsModalFunc);
+
+      /** 🔹 Page Navigation (Fixed for Contact) **/
+      const navLinks = document.querySelectorAll("[data-nav-link]");
+      const pages = document.querySelectorAll("article[data-page]");
+
+      function changePage(targetPage) {
+        pages.forEach(page => {
+          if (page.getAttribute("data-page") === targetPage) {
+            page.classList.add("active");
+            page.style.display = "block";
+          } else {
+            page.classList.remove("active");
+            page.style.display = "none";
+          }
+        });
+
+        navLinks.forEach(nav => nav.classList.remove("active"));
+
+        navLinks.forEach(link => {
+          if (link.getAttribute("data-nav-link") === targetPage) {
+            link.classList.add("active");
+          }
+        });
+
+        // 🔹 Fix lỗi mất Contact Form & Icons
+        if (targetPage === "contact") {
+          setTimeout(() => {
+            document.querySelector(".contact").style.display = "block";
+          }, 50);
+        }
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+          let targetPage = this.getAttribute("data-nav-link");
+          changePage(targetPage);
+        });
+      });
+
+      // Hiển thị trang đầu tiên mặc định
+      changePage("about");
+
+      /** 🔹 Fix lỗi mất icon Facebook, Github, Instagram **/
+      const ionIcons = document.querySelectorAll(".social-link ion-icon");
+      ionIcons.forEach(icon => {
+        icon.setAttribute("aria-hidden", "false");
+        icon.style.display = "inline-block"; // Đảm bảo không bị ẩn
+      });
+
+    });
+  </script>
+<!-- Ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

@@ -24,33 +24,33 @@
   /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
+    to bottom right,
+    hsl(240, 1%, 25%) 3%,
     hsl(0, 0%, 19%) 97%
   );
   --bg-gradient-jet: linear-gradient(
-    to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
+    to bottom right,
+    hsla(240, 1%, 18%, 0.251) 0%,
     hsla(240, 2%, 11%, 0) 100%
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
-    to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
+    to bottom right,
+    hsl(45, 100%, 71%) 0%,
     hsla(36, 100%, 69%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
-    135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
+    135deg,
+    hsla(45, 100%, 71%, 0.251) 0%,
     hsla(35, 100%, 68%, 0) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
     hsla(0, 0%, 25%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
-    to right, 
-    hsl(45, 100%, 72%), 
+    to right,
+    hsl(45, 100%, 72%),
     hsl(35, 100%, 68%)
   );
 
@@ -95,7 +95,7 @@
   /**
    * shadow
    */
-  
+
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
@@ -256,18 +256,18 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar {
-  width: 5px; /* for vertical scrollbar */
-  height: 5px; /* for horizontal scrollbar */
+  width: 10px; /* for vertical scrollbar */
+  height: 10px; /* for horizontal scrollbar */
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
   background: var(--onyx);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
   background: var(--orange-yellow-crayola);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .has-scrollbar::-webkit-scrollbar-button { width: 20px; }
@@ -509,7 +509,7 @@ main {
 
 
 /**
- * #service 
+ * #service
  */
 
 .service { margin-bottom: 35px; }
@@ -557,30 +557,34 @@ main {
 
 
 /**
- * #testimonials 
+ * #testimonials
  */
 
-.testimonials { margin-bottom: 30px; }
-
-.testimonials-title { margin-bottom: 20px; }
+ .testimonials {
+  margin-bottom: 30px;
+  max-width: 100%; /* Đảm bảo nội dung không vượt quá khung */
+  overflow: hidden; /* Ngăn chặn lòi ra ngoài */
+}
 
 .testimonials-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-start; /* Căn các phần tử từ đầu thay vì ở giữa */
   align-items: flex-start;
   gap: 15px;
-  margin: 0 -15px;
   padding: 25px 15px;
   padding-bottom: 35px;
   overflow-x: auto;
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
+  max-width: 100%;
 }
 
 .testimonials-item {
-  min-width: 100%;
-  scroll-snap-align: center;
+  flex: 0 0 auto;
+  min-width: 60%; /* Điều chỉnh để vừa với container */
+  max-width: 60%; /* Giữ nội dung trong khung */
+  scroll-snap-align: start; /* Bắt đầu từ phần tử đầu tiên */
 }
 
 .testimonials-avatar-box {
@@ -723,7 +727,7 @@ main {
 
 
 /**
- * #clients 
+ * #clients
  */
 
 .clients { margin-bottom: 15px; }
@@ -768,7 +772,7 @@ main {
 
 
 /**
- * education and experience 
+ * education and experience
  */
 
 .timeline { margin-bottom: 30px; }
@@ -831,7 +835,7 @@ main {
 
 
 /**
- * skills 
+ * skills
  */
 
 .skills-title { margin-bottom: 20px; }
@@ -1244,7 +1248,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #PORTFOLIO, BLOG 
+   * #PORTFOLIO, BLOG
    */
 
   .project-img,
@@ -1401,7 +1405,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .service-icon-box {
     margin-bottom: 0;
-    margin-top: 5px;
+    margin-top: 15px;
+
+
   }
 
   .service-content-box { text-align: left; }
@@ -1427,11 +1433,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 20px;
   }
 
-  .testimonials-avatar-box img { width: 80px; }
+  .testimonials-avatar-box img { width: 50px; }
 
   .testimonials-item-title {
     margin-bottom: 10px;
-    margin-left: 95px;
+    margin-left: 25px;
   }
 
   .testimonials-text {
@@ -1638,7 +1644,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: max-content;
     margin-left: auto;
   }
-  
+
 }
 
 
@@ -1681,7 +1687,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * MAIN 
+   * MAIN
    */
 
   main { margin-bottom: 60px; }
@@ -1878,5 +1884,308 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
+/* Team Section */
+.team-section {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.team-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.team-member {
+  background: var(--jet);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+.team-member img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member:hover {
+  background: var(--accent-color);
+  color: rgb(100, 97, 97);
+  transform: scale(1.05);
+}
+/* Sidebar */
+.sidebar-container {
+  width: 320px;
+  background: var(--onyx);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  display: none;
+  border: 1px solid var(--border-color);
+  transition: transform var(--transition);
+}
+
+.sidebar-container.active {
+  display: block;
+  transform: scale(1.05);
+}
+
+.sidebar-content {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background: var(--onyx);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+.avatar-large {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+
+/* Tags for age, traits, and role */
+#member-age,
+#member-traits,
+#member-role {
+    display: inline-block; /* Hiển thị như một tag */
+    background: linear-gradient(135deg, #252525, #1a1a1a); /* Hiệu ứng gradient nhẹ */
+    color: #ffffff; /* Chữ trắng */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Viền nhẹ */
+    border-radius: 18px; /* Bo tròn mềm mại */
+    padding: 6px 14px; /* Khoảng cách bên trong */
+    font-size: 14px; /* Kích thước chữ nhỏ */
+    font-weight: 600; /* Chữ đậm hơn một chút */
+    text-align: center; /* Căn giữa nội dung */
+    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.1); /* Đổ bóng nhẹ */
+    margin: 8px 5px; /* Khoảng cách giữa các phần tử */
+    transition: all 0.3s ease-in-out; /* Hiệu ứng mượt mà */
+}
+
+/* Hiệu ứng khi hover vào */
+#member-age:hover,
+#member-traits:hover,
+#member-role:hover {
+    background: linear-gradient(135deg, #3a3a3a, #222222); /* Tăng độ sáng khi hover */
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 5px 12px rgba(255, 255, 255, 0.2);
+    transform: scale(1.07); /* Tăng nhẹ kích thước */
+}
+
+/* View Details Button */
+#view-details {
+    background: #ffcc00; /* Màu vàng nổi bật */
+    color: #121212; /* Chữ đen để tạo độ tương phản */
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-top: 15px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(255, 204, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+#view-details:hover {
+    background: #ffdb4d;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(255, 204, 0, 0.5);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .main-content {
+      padding: 20px;
+      height: auto;
+      max-width: 100%; /* Chiếm toàn bộ chiều ngang */
+      overflow: visible; /* Hiển thị toàn bộ nội dung */
+  }
+
+  #view-details {
+      width: 100%;
+  }
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 25px 50px; /* Tăng chiều ngang hơn nữa */
+  background: var(--onyx);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  height: auto; /* Cho phép nội dung mở rộng không giới hạn chiều cao */
+  max-width: 95%; /* Chiếm nhiều không gian hơn trên màn hình */
+  overflow: visible; /* Hiển thị toàn bộ nội dung, không bị che khuất */
+  position: relative;
+  margin: auto; /* Căn giữa */
+}
+
+.main-content.shrink {
+  margin-left: 320px;
+  width: calc(100% - 340px);
+}
+.sidebar-info .avatar-box img {
+  width: 100px; /* Increase size if needed */
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.team-member {
+  cursor: pointer;
+}
+
+.team-member:hover .testimonials-avatar-box img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonials-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+.testimonials-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+/* Update Sidebar Avatar When Selecting a Member */
+.team-member {
+  cursor: pointer;
+}
+
+.team-member[data-avatar] {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team-member[data-avatar] img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonials-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+.testimonials-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+.title {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff; /* Màu chữ sáng */
+  background: linear-gradient(135deg, #252525, #1a1a1a); /* Hiệu ứng màu nền */
+  padding: 8px 16px;
+  border-radius: 10px; /* Bo góc nhẹ */
+  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.1); /* Đổ bóng */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+
+.nickname {
+  font-size: 12px;
+  color: #cccccc; /* Màu chữ nhẹ hơn */
+  background: #2a2a2a; /* Nền tối nhẹ hơn */
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-top: 3px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.member-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px; /* Giảm khoảng cách */
+  margin-top: 10px;
+}
+
+.member-details p {
+  background: #1c1c1c;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.08);
+}
+
+/* Hiệu ứng phát sáng lấp lánh cho tên */
+.name {
+  font-size: 16px; /* Nhỏ nhắn hơn */
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #3fbddd, #579cf1, #004182); /* Gradient màu tím xanh */
+  color: #ffffff;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 12px rgba(71, 227, 154, 0.6);
+  display: inline-block;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+      box-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+  }
+  100% {
+      box-shadow: 0 0 20px rgba(255, 204, 0, 1);
+  }
+}
+article[data-page] {
+  display: none;
+}
+
+article[data-page].active {
+  display: block;
+}
+
+
+
+
+
 
 }

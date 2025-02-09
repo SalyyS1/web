@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Báo</title>
+    <link rel="stylesheet" href="../assets/css/style.css"> <!-- Đường dẫn đến CSS chính -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #121212;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        .container {
+            background: #1e1e1e;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #d1d1d1;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background: #ffcc00;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ffdb4d;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚠ Chưa chọn thành viên!</h1>
+        <p>Bạn cần chọn một thành viên trước khi xem thông tin chi tiết.</p>
+        <a href="../index.html" class="btn">Quay lại</a>
+    </div>
+</body>
+</html>
