@@ -274,12 +274,12 @@
             } else {
                 sidebar.classList.add('active');
                 document.getElementById('member-name').innerText = name;
-                document.getElementById('member-nickname').innerText = nickname; // Chỉ lưu nickname, không có tiền tố "Biệt danh: "
+                document.getElementById('member-nickname').innerText = nickname;
                 document.getElementById('member-role').innerText = role;
                 document.getElementById('member-age').innerText = 'Tuổi: ' + age;
                 document.getElementById('member-traits').innerText = 'Tính cách: ' + traits;
 
-                // Kiểm tra xem avatar có tồn tại không, nếu không thì giữ ảnh mặc định
+
                 if (avatarSrc && avatarSrc.trim() !== "") {
                     document.getElementById('sidebar-avatar').src = avatarSrc;
                 } else {
@@ -288,12 +288,11 @@
             }
         }
 
-        // ✅ Di chuyển hàm `redirectToMemberPage` ra ngoài
-        function redirectToMemberPage() {
-            let nickname = document.getElementById('member-nickname').innerText.trim(); // Chỉ lấy nickname
 
+        function redirectToMemberPage() {
+            let nickname = document.getElementById('member-nickname').innerText.trim(); 
             if (nickname && nickname !== "--") {
-                let formattedNickname = nickname.toLowerCase().replace(/\s+/g, "-"); // URL-friendly
+                let formattedNickname = nickname.toLowerCase().replace(/\s+/g, "-"); 
                 window.location.href = `team/${formattedNickname}.html`;
             } else {
                 alert("Vui lòng chọn một thành viên trước!");
